@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: #1a2774; */
+
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    gap:70px;
+    padding: 0px 90px;
+    padding-top: 150px;
+}
+
+#left {
+    height: 100%;
+    width: 48%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+}
+
+#left h1 {
+    font-size: 6vw;
+    font-weight: 500;
+    line-height: 6vw;
+}
+
+#bottom-left{
+    /* height: 20%; */
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+#color{
+    width: 100%;
+    /* background-color: brown; */
+    width: fit-content;
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#color h5{
+    font-size: 20px;
+}
+
+#color1{
+    height: 20px;
+    width: 20px;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+
+#color2{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(154, 85, 154);
+    border-radius: 50%;
+}
+
+#left h2{
+    font-size: 5vw;
+}
+
+#left p{
+    font-size:19px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 65%;
+}
+
+#right {
+    position: relative;
+    height: 90%;
+    width: 33%;
+    /* background-color: rgb(90, 40, 116); */
+}
+
+#right-top{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+#rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+}
+
+h4{
+    font-size: 2rem;   
+}
+
+#rating h5{
+    margin-right: 20px;
+    
+}
+
+#rating i{
+    color:goldenrod;
+}
+
+#right img{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+}
+
+#black-gola{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(7, 7, 7, 0.916);
+    color:#fff;
+    border-radius: 50%;
+    position: absolute;
+    top:40%;
+    left:90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+#rotated{
+    left:-10%;
+    bottom:0%;
+    position: absolute;
+    /* background-color: silver; */
+    rotate: -90deg;     
+    
+    /* hame rotate karna h origin se rotate kare. */
+    transform-origin: 0 0;
+
+}
