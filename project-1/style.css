@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#main{
+    height: 100%; 
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0 40px;
+}
+
+#nav h4{
+    font-size: 2vw;
+    font-weight: 300; 
+}
+
+#nav i{
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#center{
+    /* height: 40%; */
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 40px 50px;
+}
+
+#center h1{
+    font-size: 50px;
+    line-height: 49px;
+    font-weight: 500;
+}
+
+#center-in{
+    margin-top: 50px;
+    /* height: 200px; */
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#center-in p{
+    font-size: 1.8vw;
+    line-height: 2.5vw;
+    font-weight: 600;
+}
+
+#right{
+    /* background-color: rgb(98, 98, 112); */
+    width: 20%;
+}
+
+.elem{
+    /* background-color: blanchedalmond; */
+    margin-top: 10px;
+    padding: 16px 0px;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    
+}
+
+.elem i{
+    font-size: 1.8vw;
+    opacity: 0;
+}
+
+.elem:hover{
+    background-color: rgba(240, 251, 251, 0.885);
+}
+
+.elem:hover i{
+    opacity: 1;
+}
+
+.elem:hover a{
+    text-decoration: underline;
+}
+
+#bottom{
+    height: 40%;
+    width: 100%;
+    background-color: aquamarine;
+    /* background: url(https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwZ2lscmwlMjBtb2RlbHxlbnwwfHwwfHx8MA%3D%3D); */
+    background: url(./img.jpg);
+    background-size: cover;
+    background-position: 0% 6%;
+}
