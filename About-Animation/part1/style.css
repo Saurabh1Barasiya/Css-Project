@@ -1,0 +1,36 @@
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    position: absolute;
+    animation-name: move;
+
+
+    /* animation name and animation duration dena bhut jaruri h.
+       tabhi animation chalega.
+    */
+
+
+    /* itni der ke baad animation start hoga. */
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+    /* kitne secound tak ye animation chalega. */
+    animation-duration: 2s;
+}
+
+@keyframes move {
+
+    /* initial state */
+    from{
+        left:0%;
+    }
+
+    /* Final state */
+    to{
+        left:60%;
+        rotate: 360deg;
+        background-color: rebeccapurple;
+        transform: scale(2);
+    }
+}

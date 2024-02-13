@@ -1,0 +1,49 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    position: absolute;
+
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+
+}
+
+@keyframes moving {
+    0%{
+        top: 0%;
+        left: 0%;
+        background-color: rebeccapurple;
+    }
+
+    25%{
+        top: 0%;
+        left: 80%;
+        background-color: rgb(54, 39, 68);
+        rotate: -90deg;
+        transform: scale(1.5);
+    }
+
+    50%{
+        top:50%;
+        left:80%;
+        rotate: 360deg;
+    }
+
+    75%{
+        left:0%;
+        top:50%;
+        transform: scale(2);
+        rotate: -360deg;
+    }
+
+    100%{
+        top: 0%;
+        left: 0%;
+        transform: scale(1);
+    }
+}
