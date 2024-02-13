@@ -1,0 +1,45 @@
+h1::after{
+    content: " keso ho";
+    /* app is content ko web page se copy nahi kar sakte */
+    /* ye select hi nahi hoga. */
+
+    color: blue;
+
+
+}
+
+h1::before{
+    content: "opps ";
+    color: blueviolet;
+}
+
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: sandybrown;
+}
+
+.box::before{
+    content: 'muje dede ';
+}
+.box::after{
+    content: ' dose';
+}
+
+
+#blinkingText{
+    background-color: aqua;
+    font-size: 3vw;
+}
+
+
+.blink {
+    animation: blinkAnimation 1s infinite;
+}
+
+@keyframes blinkAnimation {
+    50% {
+      opacity: 0;
+    }
+}
+
