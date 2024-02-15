@@ -1,0 +1,7 @@
+body{
+    background-color: darkcyan;
+}
+
+.parent h2:nth-last-child(1){
+    background-color: azure;
+}
