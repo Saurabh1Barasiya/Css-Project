@@ -1,0 +1,893 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:#F8F8F8;
+    /* background-color:#620c0c; */
+    position: relative;
+    padding: 0000.1px;
+}
+
+#nav{
+    height: 12vh;
+    width: 100%;
+    /* background-color: blue; */
+
+    /* ye css ka bug jese hi hamne bola nav ko top se margin do to usne main din vo bhi margin de diya. */
+    /* is bug ko fix karne ke liye app main , or nav ke beech me halka sa gap de do to   like padding 0.1px */
+    margin-top: 40px;
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav h1{
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©";
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top:12%;
+    left:92%;
+    color: #000000cd;
+    
+}
+#nav h1::before{
+    content: "model management";
+    font-size: .8vw;
+    font-weight: 100;
+    position: absolute;
+    bottom:0%;
+    left:25%;
+    color: #000000cd;
+    letter-spacing: 1px;
+    width: 20%;
+    /* background-color: saddlebrown; */
+    line-height: 12px;
+}
+
+
+#nav h2{
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 26px;
+    font-weight: 600;
+    /* background-color: red; */
+}
+
+#nav h2:nth-last-child(3){
+    /* background-color: rgb(236, 250, 114); */
+    width: 20%;
+    padding-right: 2.4vw;
+}
+
+#nav h2:nth-last-child(2){
+    /* background-color: salmon; */
+    width: 10%;
+    /* width: 20%; */
+}
+
+#nav h1{
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    letter-spacing: -1px;
+    font-size: 45px;
+}
+
+#nav h3{
+    display: none;
+}
+
+
+/* center video part. */
+
+
+#center{
+    /* screen fix ho jayegi. */
+    /* height: calc(100vh - (11vh + 40px)); */  
+
+    /* but we are using secound way. */
+    height: 90%;
+    width: 100%;
+    padding: 4vw;
+
+    width: 100%;
+    /* background-color: darkcyan; */
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+    position: relative;
+}
+
+#center #content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    /* background-color: springgreen; */
+    padding: 3vw;
+    color:#fff;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6vw;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3vw;
+    font-weight: 100;
+    mix-blend-mode: difference;
+}
+
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F8F8F8;
+    
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    /* padding: 1vw 0; */
+}
+
+#over2 h4{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 6vw;
+}
+
+
+
+/* ------------------------------------------------------------------------------------- */
+/* 👀👀 working with scrolling images */
+
+#scroll{
+    height:40vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    margin: .7vw;
+    width: 15%;
+    object-fit: cover;
+    object-position: 30% 25%;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red;
+    background-color: darkblue; */
+    display: inline-block;
+    padding: .9vw 0vw;
+    animation-name: moveanime;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveanime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* make alphabet section... */
+
+#alphabet{
+    height: 10vh;
+    /* background-color:red; */
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid #000;
+    letter-spacing: 4px;
+}
+
+#alphabet h6{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    /* background-color: yellow; */
+    border: 1px solid #00000010;
+    padding: .5vw .7vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all ease-in .1s;
+}
+
+#alphabet h6:hover{
+    border: 2px solid #000;
+}
+
+
+/* -------- image wala section ------------- */
+
+#page2{
+    padding: 2vw 5vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+}
+
+#page2 #page-part1{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(0, 130, 224);
+    background-image: url(./bottom-images/img1.jpg);
+    background-size: cover;
+    background-position: 0% 20%;
+}
+
+
+
+#page2 #page-part2{
+    height: 100%;
+    width: 46%;
+}
+
+#page2 #page-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#text-part{
+    /* background-color: steelblue; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 1vw; */
+}
+
+#text-left{
+    height: 100%;
+    width: 35%;
+    /* background-color: darkgreen; */
+}
+
+#text-left h3{
+    font-size: 1.4vw;
+    padding-top: 1vw;
+    font-weight: 500;
+    text-align: left;
+}
+
+#text-right{
+    height: 100%;
+    width: 48%;
+    /* background-color: rgb(9, 30, 72); */
+}
+
+#text-right p{
+    font-size: 1.2vw;
+    font-weight: 100;
+    padding-top: 1vw;
+    text-align: left;   
+}
+
+/* making sort */
+
+#shot{
+    height: 10vh;
+    width: 100%;
+    /* background-color: darkblue; */
+    padding: 0 5vw;
+    /* display: flex;
+    align-items: center; */
+}
+
+#shot h1{
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* --------------- */
+
+
+
+/* ---------------------------------- */
+
+#page3{
+    height: 100%;
+    width: 100%;
+    /* background-color:  aqua; */
+    padding: 3vw 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page3 #page3-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: darkolivegreen; */
+}
+
+#page3 #page3-left #page3-left-image{
+    height: 80%;
+    width: 100%;
+    /* background-color: darkkhaki; */
+}
+
+
+#page3 #page3-left #page3-left-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+
+#page3 #page3-left-text{
+    height: calc(100% - 80%);
+    /* background-color: crimson; */
+    padding-top: 2.4vw;
+}
+
+#page3 #page3-left-text span{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 1.5vw;
+}
+
+#page3 #page3-right{
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(255, 0, 0); */
+    background-image: url(./img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+
+#page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    padding:  5vw;
+}
+
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 10%;
+}
+
+#center-text{
+    height: 15vh;
+    /* background-color: cadetblue; */
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#center-text h1{
+    font-size: 5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    /* background-color: yellow; */
+    padding: .3vw;
+    font-family: monument;
+}
+
+
+/* 👀👀👀👀 --- image hover effect----- */
+
+#page5{
+    height: 80%;
+    width: 100%;
+    /* background-color: darkblue; */
+    padding: 5vw 5vw;
+}
+
+.elem{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem h4{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 7%;
+    /* background-color: salmon; */
+    
+}
+
+.elem .elem-part2{
+    width: 50%;
+}
+.elem .elem-part2 h1{
+    font-size: 2.7vw;
+    /* background-color: sandybrown; */
+    font-weight: 500;
+}
+.elem .elem-part2 h5{
+    font-size: 0.8vw;
+    /* background-color: sandybrown; */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left:10%;
+    opacity: 0;
+    transition: all ease-in .5s;
+}
+
+.elem:nth-last-child(1) img{
+    left:50%;
+}
+
+.elem:nth-last-child(2) img{
+    left:50%;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left:25%
+}
+
+.elem:hover{
+    background-color: #eae5e5ea;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+
+/* work on marque part */
+
+#marque{
+    /* height: 20vh; */
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: .5vw;
+    letter-spacing: 2px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: monument;
+    -webkit-text-stroke: 2px  black;
+    color: transparent;
+    /* background-color: blue; */
+
+
+    margin-right: 16px;
+
+
+
+    /* by default 4px ka space chutta . */
+    /* usko ham fix karfege. */
+
+
+    animation-name: moveanimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveanimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* work with responsive side... */
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav{
+        height: 10vh;
+    }
+    
+    #nav h1{
+        padding:  0 25vw;
+    }
+
+    #nav h3{
+        display: block;
+        padding:  0 5vw;
+        font-size: 8vw;
+        font-weight: 500;
+    }
+    
+    #nav h1::after{
+        content: "";
+        
+    }
+    #nav h1::before{
+        content: "";
+    }
+     
+    #nav h2{
+        display: none;
+    }
+
+
+    /* ---- working with center (video) part.---- */
+
+    #center{
+        height: 50%;
+    }
+    
+    #overlay{
+        height: 50%;
+    }
+
+    #over1 h1{
+        padding: .5vw 0;
+        letter-spacing: 2px;
+        font-size: 4vw;
+    }
+    
+    #over1 h2{
+        font-size: 5vw;
+    }
+    
+    #over2{
+        margin-top: 2vw;
+    }
+    
+    #over2 h4{
+        font-size: 4vw;
+        padding: 3vw 0;
+    }
+    
+    #over2 img{
+        width: 8vw;
+    }
+
+
+
+    /* ------- scrolling part responsive ----------- */
+
+    #scroll{
+        height:30vh;
+        width: 100%;
+    }
+    
+    #scroll img{
+        height: 70%;
+        margin: 0 .7vw;
+        width: 15%;
+        object-position: top;
+    }
+    
+    #container{
+        margin-right:1vw;
+        display: inline-block;
+        padding: 1vw 0vw;
+        padding-top: 6vw;
+    }
+
+    /* alphawet relatd task... */
+
+    #alphabet{
+        height: 13vh;
+        gap:.5vw;
+    }
+    
+    #alphabet h5{
+        font-size: 2.2vw;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+    
+    #alphabet h6{
+        font-size: 2vw;
+        font-weight: 600;
+        padding: .5vw .7vw;
+    }
+
+
+
+    /* ---------------- imges wala section ---------------- */
+
+    #page2{
+        padding: 0vw 5vw;
+        padding-top: 1vw;
+        height: 80%;
+        width: 100%;
+        gap: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        /* background-color: salmon; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #page2 #page-part1{
+        height: 100%;
+        /* height: 50%; */
+        /* width: 44%; */
+        width: 100%;
+    }
+    
+    
+    
+    #page2 #page-part2{
+        height: 50%;
+        width: 100%;
+    }
+
+
+    #page2 #page-part1{
+        background-position: 10% 3%;
+        border-radius: 1vw;
+    }
+    
+
+
+    #page2 #page-part2 img{
+        height: 60%;
+        object-position: 10% 10%; 
+        border-radius: 1vw;
+    }
+    
+    #text-left h3{
+        font-size: 2vw;
+        padding-top: 1vw;
+        font-weight: 500;
+        text-align: left;
+    }
+    
+    #text-right p{
+        font-size: 1.8vw;
+        font-weight: 200;
+    }
+
+
+    #shot{
+        height: 8vh;
+        padding: 0 5vw;
+    }
+    
+    #shot h1{
+        font-size: 5vw;
+        font-weight: 900;
+        text-align: center;
+    }
+
+
+
+
+    /* -------------------------- page3 ----------------------------------- */
+
+    #page3{
+        height: 120%;
+        width: 100%;
+        /* background-color:  aqua; */
+        padding: 3vw 5vw;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #page3-left-text{
+        display: none;
+    }
+    
+    #page3 #page3-left{
+        height: 65%;
+        /* width: 40%; */
+        width: 100%;
+        /* background-color: darkolivegreen; */
+    }
+    
+    #page3 #page3-right{
+        height: 50%;
+        width: 100%;
+        /* background-color: rgb(255, 0, 0); */
+        background-image: url(./img3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    
+    #page4 img{
+        object-position: 40% 20%;
+    }
+
+
+    #center-text{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #center-text h1{
+        font-size: 8vw;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    #page5{
+        height: 80%;
+        width: 100%;
+        padding: 5vw 5vw;
+    }
+    
+    
+    .elem h4{
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    
+    .elem .elem-part2 h1{
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    .elem .elem-part2 h5{
+        font-size: 1.8vw;
+        font-weight: 700;
+    }
+
+
+    #marque{
+        height: 10vh;
+        width: 100%;
+        /* background-color: red; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: .5vw;
+        letter-spacing: 2px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+    
+    #marque h1{
+        display: inline-block;
+        font-size: 6vw;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: monument;
+        -webkit-text-stroke: 2px  black;
+        color: transparent;
+        margin-right: 16px;
+        padding-top: 1.8vw;
+    }
+}
