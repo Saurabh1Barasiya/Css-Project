@@ -11,3 +11,7 @@ Welcome to my collection of HTML,CSS projects! Below are the live preview links 
 3. **Responsive Fashion Model Portfolio Website**
    - Description: This HTML and CSS code represents a responsive and visually appealing fashion model portfolio website. The website features a sleek navigation bar, dynamic scrolling images, video background, and sections highlighting various aspects of the model's portfolio.. 
    - [Live Preview](http://htmlpreview.github.io/?https://github.com/Saurabh1Barasiya/Css-Project/blob/main/project-3-animated-website/day-6/index.html)
+
+4. **Drrible website**
+   - Description: This HTML and CSS code represents a visually appealing Drrible website. The website features a sleek navigation bar, dynamic scrolling images and sections highlighting various aspects of the Drrible website.
+   - [Live Preview](https://htmlpreview.github.io/?https://github.com/Saurabh1Barasiya/Css-Project/blob/main/project4-drrible-website/index.html)
