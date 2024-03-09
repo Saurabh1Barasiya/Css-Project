@@ -15,6 +15,11 @@ Welcome to my collection of HTML,CSS projects! Below are the live preview links 
 4. **Drrible website**
    - Description: This HTML and CSS code represents a visually appealing Drrible website. The website features a sleek navigation bar, dynamic scrolling images and sections highlighting various aspects of the Drrible website.
    - [Live Preview](https://htmlpreview.github.io/?https://github.com/Saurabh1Barasiya/Css-Project/blob/main/project4-drrible-website/index.html)
-5. **Netflix Clone**
+5. **Netflix UI Clone**
    - Description: Clone Netflix website.
    - [Live Preview](https://htmlpreview.github.io/?https://github.com/Saurabh1Barasiya/Css-Project/blob/main/project-6-netflix-clone/index.html)
+
+
+6. **Ericsson job page**
+   - Description: Clone Ericsson job page.
+   - [Live Preview](https://htmlpreview.github.io/?https://github.com/Saurabh1Barasiya/Css-Project/blob/main/Ericsson-job-page/index.html)
